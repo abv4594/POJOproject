@@ -12,6 +12,7 @@ let objArray = [
   { planet: "Earth", system: "Milky Way" }
 ];
 
+
 keyInObjectArray(objArray, 'planet'); // => true
 keyInObjectArray(objArray, 'age'); // => true
 keyInObjectArray(objArray, 'food'); // => false
@@ -21,6 +22,13 @@ keyInObjectArray(objArray, 'animal'); // => false
 
 function keyInObjectArray(objArray, keyString) {
   // Your code here
+  
+  for (const obj of objArray) {
+    if (keyString in obj) return true
+      
+  };
+  
+  return false
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

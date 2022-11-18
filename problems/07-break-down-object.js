@@ -16,6 +16,9 @@ breakDownObj(object2); // => [ 'location', 'borough', 'NY', 'Brooklyn' ]
 
 function breakDownObj(obj) {
   // Your code here
+  let givenKeys = Object.keys(obj);
+  let givenValues = Object.values(obj);
+  return [...givenKeys, ...givenValues];
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
